@@ -1,0 +1,2 @@
+### 10. Os comandos os.exec* e os.spawn* são bastante parecidos. No entanto, eles apresentam uma diferença em suas execuções. Aponte qual é esta diferença. <h3>
+**R:** _<p>Os comandos os.<b>exec</b>* executam um novo programa, substituindo imediatamente o processo atual. O novo executável é carregado no processo atual e terá a mesma identificação de processo do chamador. Já os comandos os.<b>spawn</b>* executam o programa em um <b><i>novo</i></b> processo.</p>_

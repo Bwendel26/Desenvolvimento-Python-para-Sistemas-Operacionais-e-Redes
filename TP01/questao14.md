@@ -1,0 +1,4 @@
+### 14. Explique a principal semelhança e a principal diferença entre os comandos psutil.pids e psutil.process_iter. <h3>
+**R:** <p><ul><li>psutil.<b>pids</b>() </ul>retorna uma lista ordenada de PIDs em execução no momento. </p>
+<p><ul><li>psutil.<b>process_iter</b>(<i>attrs=None, ad_value=None</i>) </ul>retorna um iterador que produz uma instância da classe psutil.<b>Process</b>() para todos os processos em execução na máquina local.</p>
+<p>Segundo a documentação este último deve ser preterido em relação ao primeiro ao se iterar sobre os processos a fim de se evitar a condição de concorrência.</p>
