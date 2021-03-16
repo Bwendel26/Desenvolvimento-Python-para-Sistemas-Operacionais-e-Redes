@@ -1,0 +1,3 @@
+Para que serve o comando socket.bind()?
+
+    Liga o socket ao endereço. O socket ainda não deve estar vinculado.

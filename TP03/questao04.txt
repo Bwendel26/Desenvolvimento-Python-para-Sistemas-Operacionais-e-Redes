@@ -1,0 +1,19 @@
+1 - Que sequência de chamadas de funções em Python deve ser realizada pelo cliente? (Não precisa especificar os parâmetros) 
+
+    client = socket.socket(family, type)
+    client.connect((host, port))
+    client.send(msg.encode('encoding'))
+    client.close()
+
+2 - Que sequência de chamadas de funções em Python deve ser realizada pelo servidor? (Não precisa especificar os parâmetros) 
+
+    server = socket.socket(family, type)
+    server.bind((host, port))
+    server.listen()
+    server.accept()
+    server.recv()
+    server.close()
+
+3 - Quais destas funções são bloqueantes, isto é, o processo fica esperando?
+
+    server.recv() é um método blocante

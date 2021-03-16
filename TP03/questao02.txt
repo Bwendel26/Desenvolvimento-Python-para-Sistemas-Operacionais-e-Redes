@@ -1,0 +1,2 @@
+O que é um processo servidor?
+    Um processo servidor, por sua vez, está relacionado ao programa que ficará esperando clientes se conectarem e fazerem requisições a ele. É um programa passivo.

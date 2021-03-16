@@ -1,15 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-/************************ TESTE DE PERFORMANCE 03 **************************
-*    Questao 08                                                            *
-*        Aluno           : Francisco Alves Camello Neto                    *
-*        Disciplina      : Desenvolvimento Python para Redes e             *
-*                           Sistemas Operacionais                          *
-*        Professor       : Thaís do Nascimento Viana                       *
-*        Nome do arquivo : questao_08.py                                   *
-***************************************************************************/
-"""
-
 import os
 import time
 import socket
@@ -24,10 +13,7 @@ bytesToSend = msgFromClient.encode('ascii')
 serverAddressPort = (socket.gethostname(), 9991)
 bufferSize = 1024
 
-# Create a UDP socket at client side
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-
-# Send to server using created UDP socket
 UDPClientSocket.sendto(bytesToSend, serverAddressPort)
 
 try:
@@ -40,9 +26,6 @@ try:
     for part in _msg:
         if os.name == 'nt':
             if 'cdrom' in part.opts or part.fstype == '':
-                # skip cd-rom drives with no disk in it; they may raise
-                # ENOENT, pop-up a Windows GUI error for a non-ready
-                # partition or just hang.
                 continue
         usage = psutil.disk_usage(part.mountpoint)
         print(templ % (

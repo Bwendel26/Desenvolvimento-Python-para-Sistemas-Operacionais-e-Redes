@@ -1,23 +1,10 @@
 # -*- coding: utf-8 -*-
-"""
-/************************ TESTE DE PERFORMANCE 03 **************************
-*    Questao 10                                                            *
-*        Aluno           : Francisco Alves Camello Neto                    *
-*        Disciplina      : Desenvolvimento Python para Redes e             *
-*                           Sistemas Operacionais                          *
-*        Professor       : Thaís do Nascimento Viana                       *
-*        Nome do arquivo : questao_10.py                                   *
-***************************************************************************/
-"""
-
-
 import socket
 import sys
 import os
 
 
 class Questao_10():
-    """ This is a TCP client program. """
 
     def __init__(self):
         """ Constructor """
@@ -63,6 +50,5 @@ class Questao_10():
         texto = texto + '{:<.2f}'.format(kbytes) + ' KB '
         texto = texto + 'de ' + '{:<.2f}'.format(tam_bytes) + ' KB'
         print(texto)
-
 
 Questao_10()

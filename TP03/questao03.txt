@@ -1,0 +1,2 @@
+A função socket() do módulo ‘socket’ de Python é responsável por criar um socket no processo tanto para protocolo TCP, quanto UDP. Como diferenciar se o socket a ser criado é TCP e UDP?
+    Através do segundo parâmetro a ser passado à função. Este, no que lhe concerne, pode receber a constante SOCK_STREAM, usada para criar sockets TCP's ou a constante SOCK_DGRAM, usada para criar sockets UDP's.
