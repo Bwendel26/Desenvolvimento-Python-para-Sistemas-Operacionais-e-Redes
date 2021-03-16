@@ -1,0 +1,3 @@
+### 4. Que função do módulo ‘os’ de Python é usada para obter o caminho absoluto de um diretório com caminho relativo? Dê um exemplo. <h3>
+
+**R:** _<p>A função que é usasda para obter o caminho absoluto de um diretório a partir do caminho relativo é os.path.<b>abspath</b>(<i>path</i>). Ela retorna uma versão normalizada e absolutizada do nome de caminho <i>path</i>, conforme percebe-se no exemplo abaixo:</p>_
